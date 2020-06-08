@@ -82,8 +82,7 @@ header h3{
     margin: 0 1vw;
     text-decoration: none;
     font-size: 1rem;
-    border: 3px solid slategray;
-    background-color: darkgray;
+    background-color: black;
     letter-spacing: .2rem;
 }
 
@@ -91,19 +90,24 @@ header h3{
     color: gold;
 }
 
-#home {
+.home {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100vh;
     margin-top: 3%;
-    background-image: url("https://www.rbmurray.com/wp-content/uploads/2017/07/connections-background.jpg");
+    background-image: url("https://jooinn.com/images/abstract-background-1.jpg");
 
 }
 
-#myFace {
+#personal-portrait {
     border-radius: 50%;
     max-width: 30%;
+}
+
+#description {
+    height: 0;
+    width: 0;
 }
 
 #intro {
@@ -115,7 +119,7 @@ header h3{
     flex-wrap: wrap;
 }
 
-#home h2 {
+.home h2 {
     text-align: center;
     width: 100%;
     font-size: 1.5rem;
@@ -221,9 +225,17 @@ footer button{
 
   @media(max-width: 800px){
 
+    .home #personal-portrait{
+        max-width: 40%;
+    }
+    .home #intro {
+        padding: 0;
+    }
+    
     .gallery{
         flex-direction: column;
         align-content: space-around;
+        align-items: center;
         justify-content: flex-end;
     }
 
@@ -247,5 +259,27 @@ footer button{
   }
 
   @media(max-width: 500px){
-      
+    
+    .home {
+        display: flex;
+        flex-flow: column wrap;
+        height: 100vh;
+    }
+
+    .home #personal-portrait {
+        max-width: 50%;
+    }
+
+    .home h2{
+        margin: 0;
+    }
+    
+    .project{
+          width: 90%;
+      }
+
+    .overview{
+        width: 90%;
+        margin: 1.25%;
+    }
 }
