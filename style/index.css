@@ -4,7 +4,7 @@
     max-width: 100%; /*prevents elements from being larger than their parent*/
     Padding: 0;
     Margin: 0;
-    Border: 1px solid black;  /*temporary for positioning */
+    /*Border: 1px solid black;  /temporary for positioning */
     }
 
 body {
@@ -128,7 +128,7 @@ header h3{
 }
 
 h2:hover{
-    color:snow;
+    color:gold;
 }
 
 #intro p{
