@@ -52,8 +52,8 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 The following goals are designed to stretch your knowledge and may require additional research beyond what was learned in class today.
 
 - [ ] Make your webpage work at different browser widths, including mobile
-- [ ] Add CSS animations
-- [ ] Design and execute your own wireframe for `About`, `Projects`, and `Contact` pages
+- [X] Add CSS animations
+- [X] Design and execute your own wireframe for `About`, `Projects`, and `Contact` pages
 - [ ] Host your website on Netlify.com
 
 ## FAQs
