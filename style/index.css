@@ -1,1 +1,223 @@
-/* Add CSS styling here */
+*{
+    /* Reset */
+    box-sizing: border-box; /* Recalculates h*w with padding and border included */
+    max-width: 100%; /*prevents elements from being larger than their parent*/
+    Padding: 0;
+    Margin: 0;
+    /*Border: 1px solid black;  temporary for positioning */
+    }
+
+body {
+    font-size: 62.5%;
+    font-family: Merriweather;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+    
+h1 {
+    font-family: "Staatliches";
+    width: 150px;
+    letter-spacing: .4rem;
+    justify-content: center;
+    flex-basis: 100%;
+    text-align: center;
+    padding-bottom: 3vh;
+    margin-top: 4vh;
+    font-size: 2.5rem;
+    /*animation: float 6s ease-in-out infinite;*/
+}
+
+/*@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}*/
+
+#navbar {
+    justify-content: center;
+    display: flex;
+}
+#navbar a, #navbar a:visited {
+    
+    color: white;
+    padding: 1vh 1vw .5vw;
+    margin: 0 1vw;
+    text-decoration: none;
+    font-size: 1rem;
+    border: 3px solid slategray;
+    background-color: darkgray;
+    letter-spacing: .2rem;
+}
+
+#navbar a:hover{
+    color: gold;
+}
+
+#home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin-top: 3%;
+    background-image: url("https://www.rbmurray.com/wp-content/uploads/2017/07/connections-background.jpg");
+
+}
+
+#myFace {
+    border-radius: 50%;
+    max-width: 30%;
+}
+
+#intro {
+    flex: 0 0 40%;
+    padding: 5% 5%;
+    margin-top: -5%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: -2rem;
+    font-style: italic;
+}
+
+h2:hover{
+    color:snow;
+}
+
+#intro p{
+    width: 100%;
+    flex: 1 100%;
+    padding: 2rem;
+    content: 85%;
+    line-height:1.2rem;
+    text-align: center;
+    font-size: .8rem;
+
+}
+
+.emphasis{
+    font-weight: bold;
+    padding: 3%;
+}
+
+/* Projects page */
+
+/*center text*/
+.title, .overview{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.gallery{
+   display:flex;
+   width: 100vw;
+   height: 125vh;
+   border: 3px solid goldenrod;
+   ;
+   
+}
+
+.projectz{
+    display:flex;
+    width: 75%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.project{
+    display: flex;
+    align-content: center;
+    width: 30%;
+    height: 50%;
+    max-height: 300px;
+    min-width: 200px;
+    margin: 1.151515%;
+    flex-direction: column-reverse;
+
+}
+
+.project img{
+    max-width: 200px;
+    max-height:200px;
+    min-width: 100px;
+    min-height: 100px;
+    order: 1;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex: 1 0 25%;
+    max-height: 25%;
+    align-items: center;    
+}
+
+
+.overview {
+    display: flex;
+    padding: 2%;
+    width: 25%;
+    align-items: center;
+    justify-items: center;
+    letter-spacing: .18rem;
+}
+
+footer{
+    display: flex;
+    padding: 5vh;
+    align-content: center;
+    justify-content: center;
+}
+
+footer button{
+    padding: 1.5%;
+    font-weight: bold;
+    width: 145px;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .gallery{
+        flex-direction: column-reverse;
+        
+        height: 180vh;
+        align-content: space-around;
+        justify-content: flex-end;
+    }
+
+    .overview {
+        width: 100%
+    }
+    
+    .projectz{
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        width: 100%
+
+    }
+    .project {
+      flex: 50%;
+      flex-direction: row;
+      max-width: 100%;
+      max-height: 20%;
+      min-width: 100px;
+    }
+  }
